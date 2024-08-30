@@ -8,7 +8,7 @@ const contractAddress = '0xA99600043E84181A9d4137aD1cefB8cfE9138674';
 
 const geckoTerminalApiUrl = 'https://api.geckoterminal.com/api/v2/simple/networks/bsc/token_price';
 
-const totalSupply = 1000000;
+const totalSupply = 28800000;
 
 app.get('/api/total-supply', async (req, res) => {
   try {
