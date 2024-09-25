@@ -22,7 +22,7 @@ app.get('/api/total-supply', async (req, res) => {
     });
 
     const totalSupply = response.data.result;
-    res.json(Number(totalSupply));
+    res.json(Number((totalSupply / 10**6).toFixed(6)));
   } catch (error) {
     console.error('Error fetching total supply:', error.message);
     res.status(500).json({ error: 'Internal Server Error' });
